@@ -1,0 +1,379 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variáveis CSS para facilitar a manutenção */
+:root {
+    --primary-color: #007bff; /* Azul vibrante */
+    --secondary-color: #28a745; /* Verde para call to action */
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--dark-bg);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    background: url('../img/check.svg') no-repeat left center; /* Adicione um ícone de check na sua pasta img */
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+/* Header - Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #6f42c1 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    opacity: 0.9;
+}
+
+.hero-image {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 40px auto 50px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Seções gerais */
+.section-beneficios,
+.section-para-quem,
+.section-sobre-o-autor,
+.section-garantia,
+.section-preco {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-beneficios {
+    background-color: var(--light-bg);
+}
+
+.section-para-quem {
+    background-color: #fff;
+}
+.section-para-quem ul {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+.section-para-quem ul li {
+    background: url('../img/check-blue.svg') no-repeat left center; /* Outro ícone de check */
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+.section-sobre-o-autor {
+    background-color: var(--light-bg);
+}
+
+.autor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.autor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--primary-color);
+}
+
+.autor-content p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.section-garantia {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.garantia-img {
+    max-width: 180px;
+    margin-top: 30px;
+}
+
+.section-preco {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e0eaff 100%);
+    padding: 80px 0;
+}
+
+.price-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto 40px auto;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+}
+
+.old-price {
+    font-size: 1.3em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.current-price .destaque {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.parcelamento {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.oferta-limitada {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #dc3545; /* Vermelho para destaque de oferta */
+}
+
+/* Grid de benefícios */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.beneficio-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.beneficio-item:hover {
+    transform: translateY(-10px);
+}
+
+.beneficio-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.beneficio-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.beneficio-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: #f8f9fa;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .hero {
+        padding: 60px 0;
+    }
+    .hero .subtitle {
+        font-size: 1.2em;
+    }
+    .hero-image {
+        max-width: 280px;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+    .section-beneficios,
+    .section-para-quem,
+    .section-sobre-o-autor,
+    .section-garantia,
+    .section-preco {
+        padding: 60px 0;
+    }
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+    .price-box {
+        padding: 30px;
+    }
+    .current-price {
+        font-size: 2.8em;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .hero .subtitle {
+        font-size: 1em;
+    }
+    .hero-image {
+        max-width: 250px;
+    }
+    .beneficio-item {
+        padding: 20px;
+    }
+    .autor-content {
+        flex-direction: column;
+    }
+    .autor-img {
+        margin-bottom: 15px;
+    }
+}
