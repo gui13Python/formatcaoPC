@@ -10,7 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Ícone da página (favicon) - substitua por um ícone relevante -->
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62WZRMPEMV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-62WZRMPEMV');
+</script>
 </head>
+    
 <body>
     <header class="hero">
         <div class="container">
@@ -88,7 +98,7 @@
                 <p class="current-price">Por Apenas <span class="destaque">R$ 47,00</span></p>
                 <p class="parcelamento">Ou em até 5x de R$ 9,40</p>
             </div>
-            <a href="https://pay.hotmart.com/D102249214U" target="_blank" class="btn btn-secondary" id="comprar" rel="noopener" >Comprar Agora e Formatar Meu PC!</a>
+            <a href="https://pay.hotmart.com/D102249214U" target="_blank" class="btn btn-secondary" id="comprar" rel="noopener" onclick="gtag('event', 'begin_checkout');">Comprar Agora e Formatar Meu PC!</a>
             <p class="oferta-limitada">Aproveite esta Oferta agora!</p>
         </div>
     </section>
@@ -103,4 +113,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
