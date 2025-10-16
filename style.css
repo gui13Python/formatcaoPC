@@ -330,6 +330,135 @@ ul li {
 
 
 
+/* Estilização da seção de depoimentos */
+.testimonials-section {
+  background-color: #f7f7f7; /* Fundo claro para contraste suave */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a; /* Cor escura para o título */
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #4a4a4a; /* Texto em cinza escuro para legibilidade */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #6b7280; /* Cinza mais claro para o cargo */
+}
+
+.cta-container {
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2563eb; /* Azul vibrante para o botão */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1e40af; /* Azul mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .testimonials-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+  }
+}
+
+/* Suporte para tema escuro */
+@media (prefers-color-scheme: dark) {
+  .testimonials-section {
+    background-color: #1f2937; /* Fundo escuro */
+  }
+
+  .testimonials-section h2 {
+    color: #f3f4f6; /* Texto claro para o título */
+  }
+
+  .testimonial-card {
+    background-color: #374151; /* Fundo dos cards em tema escuro */
+  }
+
+  .testimonial-text {
+    color: #d1d5db; /* Texto claro nos depoimentos */
+  }
+
+  .testimonial-author {
+    color: #f3f4f6;
+  }
+
+  .testimonial-role {
+    color: #9ca3af;
+  }
+
+  .cta-button {
+    background-color: #3b82f6; /* Azul claro para contraste */
+  }
+
+  .cta-button:hover {
+    background-color: #2563eb;
+  }
+}
+
+
+
 
 
 /* Responsividade */
@@ -421,5 +550,6 @@ ul li {
         cursor: pointer;
        
     }
+
 
 }
